@@ -22,15 +22,7 @@ fetch('footer.html')
     .then(data => {
         document.getElementById('footer-placeholder').innerHTML = data;
         
-        // After footer is loaded, set up the newsletter form handler
-        const newsletterForm = document.getElementById('newsletter-form');
-        if (newsletterForm) {
-            newsletterForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thanks for subscribing! (Connect this to your email service provider)');
-                this.reset();
-            });
-        }
+
     })
     .catch(error => console.error('Error loading footer:', error));
 
