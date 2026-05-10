@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking - Jason Bollinger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;600&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation (loaded dynamically) -->
+    <div id="header-placeholder"></div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Speaking Engagements</h1>
+            <p class="subtitle">Practical insights for leaders navigating complexity and change</p>
+        </div>
+    </section>
+
+    <!-- Speaking Section -->
+    <section class="speaking">
+        <div class="container">
+            <div class="speaking-content">
+                <div class="speaking-info">
+                    <h2>Book Me to Speak</h2>
+                    <p>I deliver engaging keynotes and workshops for conferences, leadership teams, and organizational development events. My talks combine research-backed insights with practical strategies leaders can implement immediately.</p>
+                    
+                    <p>Whether you're looking for an inspiring keynote to energize your conference, a workshop to upskill your leadership team, or a panel moderator who brings depth and insight, I create experiences that resonate long after the event ends.</p>
+
+                    <h3 style="margin-top: 3rem; margin-bottom: 1.5rem;">Speaking Topics</h3>
+                    <ul class="topics">
+                        <li><strong>Building High-Performing Teams in Complex Environments</strong> – The practical framework for creating teams that execute with excellence</li>
+                        <li><strong>Strategic Planning That Actually Drives Results</strong> – Moving beyond documents to strategies that create real organizational change</li>
+                        <li><strong>Leading Change Without Losing Your Best People</strong> – How to navigate transformation while keeping your team engaged and aligned</li>
+                        <li><strong>Creating Cultures of Accountability and Trust</strong> – The delicate balance between high standards and psychological safety</li>
+                        <li><strong>The Essential Skills of Next-Generation Leaders</strong> – What it takes to lead effectively in an era of rapid change</li>
+                        <li><strong>From Manager to Leader: Making the Critical Transition</strong> – Successfully shifting from managing tasks to leading people</li>
+                    </ul>
+
+                    <h3 style="margin-top: 3rem; margin-bottom: 1rem;">What to Expect</h3>
+                    <div class="speaking-features">
+                        <div class="feature-item">
+                            <strong>Practical & Actionable</strong>
+                            <p>No fluff. Every talk is designed to give your audience tools and frameworks they can use immediately.</p>
+                        </div>
+                        <div class="feature-item">
+                            <strong>Research-Backed</strong>
+                            <p>Grounded in leadership research and organizational psychology, combined with real-world application.</p>
+                        </div>
+                        <div class="feature-item">
+                            <strong>Engaging Delivery</strong>
+                            <p>Stories, examples, and interactive elements that keep audiences engaged from start to finish.</p>
+                        </div>
+                        <div class="feature-item">
+                            <strong>Customized Content</strong>
+                            <p>Every presentation is tailored to your audience, industry, and organizational challenges.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <h3 style="margin-bottom: 1.5rem;">Request a Speaking Engagement</h3>
+                    <form id="speaking-form">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="organization">Organization *</label>
+                            <input type="text" id="organization" name="organization" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="event-type">Event Type *</label>
+                            <select id="event-type" name="event-type" required>
+                                <option value="">Select one...</option>
+                                <option value="keynote">Keynote</option>
+                                <option value="workshop">Workshop</option>
+                                <option value="panel">Panel Discussion</option>
+                                <option value="training">Leadership Training</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Event Date</label>
+                            <input type="text" id="date" name="date" placeholder="Approximate or flexible">
+                        </div>
+                        <div class="form-group">
+                            <label for="audience">Audience Size & Type</label>
+                            <input type="text" id="audience" name="audience" placeholder="e.g., 200 senior leaders">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Tell me about your event *</label>
+                            <textarea id="message" name="message" required placeholder="Event goals, key challenges, what you hope attendees will gain, etc."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (loaded dynamically) -->
+    <div id="footer-placeholder"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
