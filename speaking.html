@@ -106,7 +106,10 @@
 
                 <div class="form-container">
                     <h3 style="margin-bottom: 1.5rem;">Request a Speaking Engagement</h3>
-                    <form id="speaking-form">
+                    <form id="speaking-form" name="speaking" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="speaking">
+                        <input type="hidden" name="subject" value="NEW SPEAKING INQUIRY">
+                        <p style="display:none"><label>Leave this empty: <input name="bot-field"></label></p>
                         <div class="form-group">
                             <label for="name">Name *</label>
                             <input type="text" id="name" name="name" required>

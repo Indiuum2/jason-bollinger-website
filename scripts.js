@@ -29,21 +29,12 @@ fetch('footer.html')
 // Form submission handlers
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Speaking form handler
+    // Speaking form: label the notification email with the sender's name
     const speakingForm = document.getElementById('speaking-form');
     if (speakingForm) {
-        speakingForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // For now, show an alert. You'll replace this with your actual form handler
-            alert('Thank you for your inquiry! I\'ll get back to you soon.\n\nNote: To make this form functional, you\'ll need to:\n1. Set up a form service (like Formspree, Google Forms, or Netlify Forms)\n2. Update the form action or add backend handling');
-            
-            // Reset form
-            this.reset();
+        speakingForm.addEventListener('submit', function() {
+            const who = this.querySelector('#name').value.trim();
+            this.querySelector('input[name="subject"]').value = 'NEW SPEAKING INQUIRY' + (who ? ' | ' + who : '');
         });
     }
 
